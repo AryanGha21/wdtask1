@@ -1,0 +1,101 @@
+body{
+    background-color:#ecddc8 !important;
+}
+.card-box{
+    display : grid;
+    height : auto;
+    width : 60%;
+
+    grid-template-columns : 1fr 1fr;
+    row-gap : 3em;
+
+    justify-content: center;
+    align-items: center;
+
+
+    left : 50%;
+    transform: translateX(-50%);
+    position : relative;
+
+    margin : 5vh 0; 
+}
+
+
+
+.card{
+    display : flex;
+    flex-direction : column;
+
+    height: 25vw;
+    width : 25vw;
+
+    border : solid 2px black !important;
+
+    justify-content: space-evenly;
+    align-items : center;
+
+    justify-self: center;
+
+    padding : 1em 0;
+}
+
+.card h1{
+    text-align : center;
+    width : 80%;
+    font-size : 1.2em;
+
+}
+
+.card ul{
+    align-self : flex-start;
+}
+
+
+.button{
+
+    padding : .3em .4em;
+    border-radius : 10px;
+    background-color : skyblue;
+
+}
+
+.button a{
+    color : white;
+}
+
+
+
+.card-box .card:nth-last-child(1) 
+{
+    position : relative;
+    left : 50%;
+    transform : tranlateX(-50%);
+}
+
+
+.card:hover{
+    position : relative;
+    transform : scale(1.1);
+    transition : transform 200ms ease-out 0ms;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.button:hover{
+    background-color: rgb(20, 118, 156);
+    transform: scale(1.1) translateY(-15%);
+    transition :  50ms ease-out;
+
+}
+.button a:hover{
+    color : white;
+    text-decoration: none;
+}
+.img{
+    width:50px;
+    height:50px;
+    position: relative ;
+    left:90%;
+}
+.a{
+    text-align: center;
+}
